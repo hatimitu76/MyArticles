@@ -1,0 +1,13 @@
+{
+  "name": "hatimitu-zenn-articles",
+  "version": "1.0.0",
+  "scripts": {
+    "zenn": "zenn",
+    "new:article": "zenn new:article",
+    "new:book": "zenn new:book",
+    "preview": "zenn preview"
+  },
+  "dependencies": {
+    "zenn-cli": "^0.1.158"
+  }
+}
