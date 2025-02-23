@@ -1,5 +1,21 @@
 {
   "plugins": {},
   "filters": {},
-  "rules": {}
+  "rules": {
+    "preset-japanese": true,
+    "ja-no-weak-phrase": true,
+    "ja-no-redundant-expression": true,
+    "ja-no-abusage": true,
+    "ja-no-mixed-period": true,
+    "ja-hiragana-keishikimeishi": true,
+    "ja-hiragana-fukushi": true,
+    "ja-hiragana-hojodoushi": true,
+    "ja-unnatural-alphabet": true,
+    "@textlint-ja/textlint-rule-no-insert-dropping-sa": true,
+    "@textlint-ja/no-synonyms": true,
+    "ja-no-orthographic-variants": true,
+    "prefer-tari-tari": true,
+    "@textlint-ja/no-filler": true,
+    "ja-overlooked-typo": true
+  }
 }
