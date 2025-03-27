@@ -15,20 +15,18 @@ published: true
 ## 対象読者
 
 - JavaScriptでJSONやCSSを扱う開発者
-- モダンなJavaScript機能に興味がある方
+- モダンなJavaScript機能に興味がある人
 
 ## Import Attributesの基本的な使い方
 
 ### JSONの場合
 
-従来のコード:
-```js
+```js:従来のコード
 const res = await fetch("https://json.test/test.json");
 const JSONobj = await res.json();
 ```
 
-Import Attributesを使用:
-```js
+```js:Import Attributesを使用
 import JSONobj from "https://json.test/test.json" with { type: "json" };
 // または
 const JSONobj = await import("https://json.test/test.json", { with: { type: "json" } });
@@ -36,16 +34,14 @@ const JSONobj = await import("https://json.test/test.json", { with: { type: "jso
 
 ### CSSの場合
 
-従来のコード:
-```js
+```js:従来のコード
 const res = await fetch("https://css.test/test.css");
 const sheet = new CSSStyleSheet();
 await sheet.replace(await res.text());
 document.adoptedStyleSheets = [ sheet ];
 ```
 
-Import Attributesを使用:
-```js
+```js:Import Attributesを使用
 import sheet from "https://css.test/test.css" with { type: "css" };
 // または
 const sheet = await import("https://css.test/test.css", { with: { type: "css" } });
@@ -56,11 +52,9 @@ document.adoptedStyleSheets = [ sheet ];
 
 Import Attributesを使用すると、JavaScriptモジュールと同様の方法でJSONやCSSをインポートできます。`with`キーワードでタイプを指定します。
 
-このAPI導入により、JSON・CSSの読み込みがより宣言的で簡潔になりました。
+Node.jsでもJSONのimportに対応しており、ローカルファイルにも使用できます。設定ファイルの読み込みなど、今まで長く書いていたコードが短くなることでしょう。
 
-Node.jsでもJSONのimportに対応しており、ローカルファイルにも使用できます。設定ファイルの読み込みなど、実用的なユースケースが期待できます。
-
-ダイナミックインポートにも対応しているため、APIリクエストなどにも活用できます：
+ダイナミックインポートにも対応しているため、APIリクエストなどにも活用できます。
 
 ```js
 async function fetchAPI(num) {
@@ -68,7 +62,7 @@ async function fetchAPI(num) {
 }
 ```
 
-ただし、この機能はFirefoxでまだ実装されていません（2025/2/22現在）。ブラウザでの本番利用は、もう少し様子を見ることをお勧めします。
+ただし、この機能はFirefoxでまだ実装されていません（2025/2/22現在）。ブラウザでの本番利用は、もう少し様子を見ましょう。
 
 ## 参考リンク
 
