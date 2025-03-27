@@ -2,30 +2,40 @@
 title: Astro製のサイトにSNSの投稿を埋め込む
 emoji: "📱"
 type: tech
-topics: ["astro", "SSG", "SNS", "埋め込み"]
+topics: ["astro", "astro5", "SSG", "SNS", "埋め込み"]
 published: true
 ---
 
-つい最近、Astro 5.0がリリースされました。このリリースでContent Layerがリリースされ、様々なデータソースからデータを読み込めるようになりました。
+:::message
+
+こちらは2024年12月21日に私の[個人ブログ](https://hatmt.com/blog)で公開されたものを編集したものです。
+
+:::
+
+つい最近、Astro 5.0(記事公開時点)がリリースされました。このリリースでContent Layerがリリースされ、様々なデータソースからデータを読み込めるようになりました。
 
 このContent Layerを使ってMisskeyとBlueskyの投稿を取得していきます。
 
 Astro 4以前のContent Collectionでは読み込めないので、バージョンアップとコードの変更をしておいてください。
 
-### 今回使うライブラリ
+## 今回使うライブラリ
 
 + @ascorbic/bluesky-loader
 + @ascorbic/feed-loader
 
-### Bluesky
+### リポジトリ
 
-#### インストール
+https://github.com/ascorbic/astro-loaders
+
+## Bluesky
+
+### インストール
 
 ```sh
 npm install @ascorbic/bluesky-loader
 ```
 
-#### 設定
+### 設定
 
 インストールが終わったら`src/content.config.ts`を編集しに行きましょう。
 
@@ -46,13 +56,14 @@ export const collections = { bskyPosts };
 `your handle`の部分には@を抜いたあなたのハンドルを入力してください。
 `late`は好きなように設定してください。
 
-これを書いておけばあなたのBlueskyの投稿を、AstroでMarkdownを扱うときのノリで扱えるようになります。ちなみにリポストも含まれるので自分の投稿だけを表示したい方はフィルタリングをする必要があります。
+これを書いておけばあなたのBlueskyの投稿を、AstroでMarkdownを扱うときのノリで扱えるようになります。ちなみにリポストも含まれるので自分の投稿だけを表示したいほうはフィルタリングをする必要があります。
 
 Markdownの場合はフロントマターの情報が入っている`entry.data`には、投稿者の情報や投稿本体などが入っています。
 
-参考のために`entry`を`JSON.stringify()`したものを置いておきます
+参考のために`entry`を`JSON.stringify()`したものを置いておきます。
 
-:::details 開く
+:::details 開く。
+
 ```json
 {
     "id": "at://did:plc:ruwnuvzigdl3527oe3vjrqwj/app.bsky.feed.post/3ldgsirsxns2y",
@@ -136,7 +147,7 @@ Markdownの場合はフロントマターの情報が入っている`entry.data`
 
 これにAPIを結構いろんなことができそうですね。
 
-#### 投稿を埋め込む
+### 投稿を埋め込む
 
 投稿を埋め込むときは、**絶対にAstro Embedを使わない**でください！
 
@@ -144,7 +155,7 @@ Astro EmbedはNo JSなAstroの埋め込みライブラリです。No JSである
 
 **APIのレート制限にすぐに達してしまうのです！**
 
-どうやらAstro Embedは内部でBlueskyのAPIを叩いて静的なHTMLを出力しているようです。ブログに一つ二つ投稿を埋め込むくらいならレートに達することはありませんが一つのアカウントのすべてのポストを取得し、それを何度も何度もリロードするとなるとどうでしょうか？　すぐにレートに達しますね()
+どうやらAstro Embedは内部でBlueskyのAPIを叩いて静的なHTMLを出力しているようです。ブログに一つ二つ投稿を埋め込むくらいならレートに達することはありませんが一つのアカウントのすべてのポストを取得し、それを何度もリロードするとどうでしょうか？　すぐにレートに達しますね()
 
 そこで、公式の埋め込みを使用します。
 
@@ -173,9 +184,7 @@ Astro EmbedはNo JSなAstroの埋め込みライブラリです。No JSである
 import { getCollection } from "astro:content";
 const bskyPosts = await getCollection("bskyPosts")
 ```
-```
----
-```
+
 ```tsx
 {
   bskyPosts.map((post) => (<blockquote
@@ -187,19 +196,19 @@ const bskyPosts = await getCollection("bskyPosts")
 <script async src="https://embed.bsky.app/static/embed.js" charset="utf-8"></script>
 ```
 
-ただ、`entry.data`で必要な情報はすべて手に入るのでCSS完全に理解している方はそちらのほうが良いと思います。私は理解できていません(´；ω；｀)
+ただ、`entry.data`で必要な情報はすべて手に入るのでCSS完全に理解しているほうはそちらのほうが良いでしょう。私は理解できていません(´；ω；｀)
 
-### Misskey
+## Misskey
 
 Misskeyの読み込みにはRSSを使います。
 
-#### インストール
+### インストール
 
 ```sh
 npm install @ascorbic/feed-loader
 ```
 
-#### 設定
+### 設定
 
 先ほどと同じく`src/content.config.ts`を編集しましょう。
 
@@ -222,7 +231,7 @@ export const collections = { misskeyFeed };
 
 こちらも`entry`を`JSON.stringify()`したものを置いておきます。
 
-:::details 開く
+:::details 開く。
 ```json
 {
   "id": "https://misskey.io/notes/a20fee59u91o0e9a",
@@ -273,27 +282,17 @@ export const collections = { misskeyFeed };
 ```
 :::
 
-<details>
-  <summary>開く</summary>
-  <Code lang="json" code={`
-`} />
-</details>
+こちらもAPIでウンタラカンタラできそうですが、認証がしなければいけないので面倒ですね。
 
-こちらもAPIでウンタラカンタラできそうですが、認証が必要なのがめんどくさいですね。
-
-#### 投稿を埋め込む
+### 投稿を埋め込む
 
 Misskey本体では実装されていますが、ioにはまだ反映されていないので`entry.data`とCSSでなんとかしましょう。
 
-MFMを実装できる方は実装すると面白いかもしれませんね。
+MFMを実装できる人は実装すると面白いでしょう。
 
 ```ts
 import { getCollection } from "astro:content";
 const misskeyFeed = await getCollection("misskeyFeed")
-```
-
-```
----
 ```
 
 ```tsx
@@ -305,5 +304,3 @@ const misskeyFeed = await getCollection("misskeyFeed")
   })
 }
 ```
-
-良ければシェアしていってください。
