@@ -17,7 +17,7 @@ published: true
 
 Leggeroはゲーミングキーボードではなくビジネス向けキーボードなので、デザインは大人しくスタイリッシュになっています。
 
-![Leggeroの外観](/images/Leggero_Keybord.jpg)
+![Leggeroの外観](/images/blog/Leggero_Keybord.webp)
 
 黒の本体に黒印字、オリジナルフォントによるかな無し印字。おしゃれですね。ちなみにかな無し印字ですがJIS配列なので注意です。
 
