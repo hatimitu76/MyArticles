@@ -1,6 +1,7 @@
 ---
 title: Hono JSXでReactを置き換える
 emoji: "🔥"
+type: tech
 topics: ["react", "hono", "honoJSX"]
 published: true
 ---

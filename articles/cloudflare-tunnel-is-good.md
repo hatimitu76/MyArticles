@@ -1,7 +1,7 @@
 ---
 title: Cloudflare Tunnelはいいぞ
 emoji: "🚇️"
-type: "blog"
+type: "tech"
 topics: ["cloudflare", "cloudflareTunnel"]
 published: true
 ---
