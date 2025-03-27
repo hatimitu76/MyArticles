@@ -3,6 +3,7 @@ title: Pages CMSでMarkdownをSSGしているサイトにCMSを追加する
 emoji: "📝"
 type: blog
 topics: ["PagesCMS", "Markdown", "SSG"]
+published: true
 ---
 こんにちは、お元気してますか？　PCを開くのがだるすぎて年末年始に何もしなかったハチミツです。Markdownを使ったSSGはサーバーがいらないことがメリットですが、スマホから編集できないのが欠点ですよね。大幅なモチベ低下を招きます。
 

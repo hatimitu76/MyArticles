@@ -2,6 +2,7 @@
 title: Hono JSXでReactを置き換える
 emoji: "🔥"
 topics: ["react", "hono", "honoJSX"]
+published: true
 ---
 
 皆さん、Honoは使っていますか？　彼はどこでも素早く動くTypeScript製のバックエンド(最近はフルスタックし始めてるけど)フレームワークです。
