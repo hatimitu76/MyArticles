@@ -1,9 +1,9 @@
 ---
 title: Hono JSXでReactを置き換える
-description: Hono JSXでReactを置き換えられるということに気づきました
-pubDate: 2024-12-19
-updatedDate: 2025-12-19
+emoji: "🔥"
+topics: ["react", "hono", "honoJSX"]
 ---
+
 皆さん、Honoは使っていますか？　彼はどこでも素早く動くTypeScript製のバックエンド(最近はフルスタックし始めてるけど)フレームワークです。
 
 最近Hono付属のJSXでReactを置き換えられるということに気付いたので共有していきます。

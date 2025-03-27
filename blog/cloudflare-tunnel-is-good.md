@@ -1,8 +1,9 @@
 ---
 title: Cloudflare Tunnelはいいぞ
-description: Cloudflare Tunnelのいいところを発表します
-pubDate: 2024-12-19
-heroImage: "/api/og/cloudflare-tunnel-is-good.png"
+emoji: "🚇️"
+type: "blog"
+topics: ["cloudflare", "cloudflareTunnel"]
+published: true
 ---
 
 ---

@@ -1,8 +1,9 @@
 ---
 title: Elecomのメカニカルキーボード、Leggeroをレビューする
-description: シンプルなメカニカルキーボードのLeggeroを購入したのでレビューします
-pubDate: 2025-02-21
-updatedDate: 2025-02-21
+emoji: "⌨️"
+type: "blog"
+topics: ["elecom", "キーボード", "メカニカルキーボード"]
+published: true
 ---
 こんにちは、ハチミツです。
 

@@ -1,8 +1,8 @@
 ---
 title: Astro製のサイトにSNSの投稿を埋め込む
-description: AstroのContent Layerを使ってSNSの投稿を取得していきます
-pubDate: 2024-12-21
-heroImage: "/api/og/embed-sns-post-to-astro-site.png"
+emoji: "📱"
+topics: ["astro", "SSG", "SNS", "埋め込み"]
+published: true
 ---
 
 つい最近、Astro 5.0がリリースされました。このリリースでContent Layerがリリースされ、様々なデータソースからデータを読み込めるようになりました。

@@ -1,8 +1,8 @@
 ---
 title: Pages CMSでMarkdownをSSGしているサイトにCMSを追加する
-description: Pages CMSで構成をいじらずにMarkdownをSSGしているサイトにCMSを追加できます。
-pubDate: 2025-01-20
-updatedDate: 2025-01-20
+emoji: "📝"
+type: blog
+topics: ["PagesCMS", "Markdown", "SSG"]
 ---
 こんにちは、お元気してますか？　PCを開くのがだるすぎて年末年始に何もしなかったハチミツです。Markdownを使ったSSGはサーバーがいらないことがメリットですが、スマホから編集できないのが欠点ですよね。大幅なモチベ低下を招きます。
 
