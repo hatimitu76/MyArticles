@@ -1,7 +1,7 @@
 ---
 title: "ZennのMarkdownは外部画像を読み込めるのか？"
 emoji: "📷"
-type: "tech" # tech: 技術記事 / idea: アイデア
+type: "idea" # tech: 技術記事 / idea: アイデア
 topics: ["zenn", "markdown"]
 published: true
 ---
@@ -10,7 +10,7 @@ published: true
 
 Zenn CLIでは外部の画像をそのまま読み込んでいた。
 
-公開されると画像CDNから読み込むようになる。
+アップロードされると画像CDNから読み込むようになる。
 
 ## 検証用の画像
 
