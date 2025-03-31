@@ -2,7 +2,7 @@
 title: Pages CMSでMarkdownをSSGしているサイトにCMSを追加する
 emoji: "📝"
 type: tech
-topics: ["PagesCMS", "Markdown", "SSG"]
+topics: ["Pages CMS", "Markdown", "SSG"]
 published: true
 ---
 
