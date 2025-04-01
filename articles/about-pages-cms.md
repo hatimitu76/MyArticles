@@ -74,7 +74,7 @@ Pages CMSがサポートしている出力ファイル形式は次の通りで�
 
 このとき注意してほしいのが、レポジトリ権限を**すべてのレポジトリ**に設定しなければいけないことです。アプリにはレポジトリを追加のようなメニューはありません。もし間違って権限を単一レポジトリで設定してしまった場合は、[github.com/settings/installations](https://github.com/settings/installations)から変更できます。
 
-![Pages CMSのログイン画面](/images/techBlog/app.pagescms.org-sign-in.webp)
+![Pages CMSのログイン画面](/images/app.pagescms.org-sign-in.webp)
 
 認可が終わるとあなたのレポジトリの一覧が表示されます。下の方にはあらかじめ設定ファイルが設置されているテンプレートへのリンクがあります。
 
@@ -86,7 +86,7 @@ Pages CMSの設定は`.pages.yml` に書きます。もちろんルート直下�
 
 レポジトリ一覧からお好きなレポジトリを開きましょう。そうするとsettingに飛ばされるはずです。こちらにyaml形式で設定を書いていきます。
 
-![Pages CMSの設定ファイル](/images/techBlog/app.pagescms.org-setting.webp)
+![Pages CMSの設定ファイル](/images/app.pagescms.org-setting.webp)
 
 `.pages.yml` には`media` と`content` の項目があります。`media` にはファイル関係の設定を、`content` にはMarkdownコンテンツの設定を記入します。
 
