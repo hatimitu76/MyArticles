@@ -1,0 +1,17 @@
+name: webhook
+on:
+  push:
+    branches:
+      - main
+jobs:
+  webhook:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Webhook
+        runs: |
+          curl -L \
+          -X POST \
+          -H "Accept: application/vnd.github+json" \
+          -H "Authorization: Bearer ${{ secrets.MYBLOG_WEBHOOK_TOKEN }}"\
+          https://api.github.com/repos/hatimitu76/myblog/dispatches \
+          -d '{"event_type":"update-myarticles-module"'
