@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Send Webhook
-        runs: |
+        run: |
           curl -L \
           -X POST \
           -H "Accept: application/vnd.github+json" \
