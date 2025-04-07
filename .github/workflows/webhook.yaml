@@ -2,7 +2,7 @@ name: webhook
 on:
   push:
     branches:
-      - main
+      - main 
 jobs:
   webhook:
     runs-on: ubuntu-latest
