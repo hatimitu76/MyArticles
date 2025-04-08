@@ -3,7 +3,7 @@ title: "個人ブログの記事をgit submoduleを使ってZennのリポジト�
 emoji: "🧑‍🤝‍🧑"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["zenn", "markdown", "git", "githubactions", "Astro"]
-published: false
+published: true
 ---
 
 サイト自身と記事が同じリポジトリで管理されていることが気持ち悪くなったので、Zennの記事リポジトリにブログの記事を突っ込みました。
