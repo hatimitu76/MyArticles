@@ -4,6 +4,9 @@ emoji: "🧑‍🤝‍🧑"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["zenn", "markdown", "git", "githubactions", "Astro"]
 published: true
+
+createAt: 2025-04-08
+updateAt: 2025-04-08
 ---
 
 サイト自身と記事が同じリポジトリで管理されていることが気持ち悪くなったので、Zennの記事リポジトリにブログの記事を突っ込みました。

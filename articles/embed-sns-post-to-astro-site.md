@@ -4,6 +4,9 @@ emoji: "📱"
 type: tech
 topics: ["astro", "astro5", "SSG", "SNS", "埋め込み"]
 published: true
+
+createAt: 2024-12-21
+updateAt: 2024-12-21
 ---
 
 :::message

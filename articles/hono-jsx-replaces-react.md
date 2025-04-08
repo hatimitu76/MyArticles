@@ -4,6 +4,9 @@ emoji: "🔥"
 type: tech
 topics: ["react", "hono", "honoJSX"]
 published: true
+
+createAt: 2024-12-19
+updateAt: 2025-12-19
 ---
 
 皆さん、Honoは使っていますか？　彼はどこでも素早く動くTypeScript製のバックエンド(最近はフルスタックし始めてるけど)フレームワークです。

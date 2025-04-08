@@ -4,6 +4,9 @@ emoji: "📝"
 type: tech
 topics: ["Pages CMS", "Markdown", "SSG"]
 published: true
+
+createAt: 2024-12-21
+updateAt: 2024-12-21
 ---
 
 :::message
