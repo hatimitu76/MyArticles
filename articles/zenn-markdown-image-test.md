@@ -4,6 +4,9 @@ emoji: "📷"
 type: "idea" # tech: 技術記事 / idea: アイデア
 topics: ["zenn", "markdown"]
 published: true
+
+createAt: 2025-03-23
+updateAt: 2025-03-28
 ---
 
 ## 結果

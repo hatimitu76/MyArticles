@@ -4,7 +4,11 @@ emoji: "⌨️"
 type: "blog"
 topics: ["elecom", "キーボード", "メカニカルキーボード"]
 published: true
+
+createAt: 2025-02-21
+updatedAt: 2025-02-21
 ---
+
 こんにちは、ハチミツです。
 
 今回はElecomのオフィス向けメカニカルキーボード、Leggeroをレビューさせていただきます。
