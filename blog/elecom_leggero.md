@@ -5,8 +5,8 @@ type: "blog"
 topics: ["elecom", "キーボード", "メカニカルキーボード"]
 published: true
 
-createAt: 2025-02-21
-updatedAt: 2025-02-21
+createdAt: 2025-02-21
+updateAt: 2025-02-21
 ---
 
 こんにちは、ハチミツです。

@@ -5,7 +5,7 @@ type: "tech"
 topics: ["javascript", "typescript", "ecmascript", "json", "css"]
 published: true
 
-createAt: 2025-03-28
+createdAt: 2025-03-28
 updateAt: 2025-03-28
 ---
 
