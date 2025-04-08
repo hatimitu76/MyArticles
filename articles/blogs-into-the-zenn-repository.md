@@ -5,7 +5,7 @@ type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["zenn", "markdown", "git", "githubactions", "Astro"]
 published: true
 
-createAt: 2025-04-08
+createdAt: 2025-04-08
 updateAt: 2025-04-08
 ---
 

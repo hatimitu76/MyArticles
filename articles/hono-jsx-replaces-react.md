@@ -5,7 +5,7 @@ type: tech
 topics: ["react", "hono", "honoJSX"]
 published: true
 
-createAt: 2024-12-19
+createdAt: 2024-12-19
 updateAt: 2025-12-19
 ---
 
