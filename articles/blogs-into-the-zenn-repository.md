@@ -2,7 +2,7 @@
 title: "個人ブログの記事をgit submoduleを使ってZennのリポジトリで統合管理する"
 emoji: "🧑‍🤝‍🧑"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: ["zenn", "markdown", "git", "githubactions", "Astro"]
+topics: ["zenn", "markdown", "git", "githubactions", "astro"]
 published: true
 
 createdAt: 2025-04-08
