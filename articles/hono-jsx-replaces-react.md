@@ -6,8 +6,15 @@ topics: ["react", "hono", "honoJSX"]
 published: true
 
 createdAt: 2024-12-19
-updateAt: 2025-12-19
+updateAt: 2025-05-16
 ---
+
+:::message alert
+
+2025-05-16追記
+Chadcn UIが動かないことを追記しました。
+
+:::
 
 皆さん、Honoは使っていますか？　彼はどこでも素早く動くTypeScript製のバックエンド(最近はフルスタックし始めてるけど)フレームワークです。
 
@@ -66,3 +73,6 @@ Reactは47.8KBのスクリプトをブラウザに送りますが、Hono JSXは2
 
 自分が確認した限り、ViteのReactとRemixのテンプレートが動きました。
 
+### 動かなかった場所
+
+Chadcn UIが動きませんでした。型定義でエラーが出ていました。
