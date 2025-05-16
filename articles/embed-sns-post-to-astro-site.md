@@ -2,7 +2,7 @@
 title: Astro製のサイトにSNSの投稿を埋め込む
 emoji: "📱"
 type: tech
-topics: ["astro", "astro5", "SSG", "SNS", "埋め込み"]
+topics: ["astro", "astro5", "ssg", "sns", "埋め込み"]
 published: true
 
 createdAt: 2024-12-21
