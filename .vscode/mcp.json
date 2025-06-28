@@ -1,0 +1,12 @@
+{
+  "servers": {
+    "textlint": {
+      "type": "stdio",
+      "command": "pnpm",
+      "args": [
+        "textlint",
+        "--mcp"
+      ]
+    }
+  }
+}
