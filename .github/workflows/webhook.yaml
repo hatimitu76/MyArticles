@@ -13,8 +13,8 @@ jobs:
           curl -L \
           -X POST \
           -H "Accept: application/vnd.github+json" \
-          -H "Authorization: Bearer ${{ secrets.MYBLOG_WEBHOOK_TOKEN }}" \
-          -d '{"event_type":"update-myarticles-module"' \
+          -H "Authorization: Bearer ${{ secrets.WEBHOOK_TOKEN }}" \
+          -d '{"event_type":"update-myarticles-module}"' \
           https://api.github.com/repos/hatimitu76/myblog/dispatches
       - name: To articlehub
         run: |
@@ -22,6 +22,6 @@ jobs:
           curl -L \
           -X POST \
           -H "Accept: application/vnd.github+json" \
-          -H "Authorization: Bearer ${{ secrets.ARTICLEHUB_WEBHOOK_TOKEN }}" \
+          -H "Authorization: Bearer ${{ secrets.WEBHOOK_TOKEN }}" \
           -d '{"event_type":"start-build"}' \
           https://api.github.com/repos/hatimitu76/articlehub/dispatches
