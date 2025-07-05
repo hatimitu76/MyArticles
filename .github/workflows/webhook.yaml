@@ -25,3 +25,12 @@ jobs:
           -H "Authorization: Bearer ${{ secrets.WEBHOOK_TOKEN }}" \
           -d '{"event_type":"start-build"}' \
           https://api.github.com/repos/hatimitu76/articlehub/dispatches
+      - name: To articlehub
+        run: |
+          sleep 5
+          curl -L \
+          -X POST \
+          -H "Accept: application/vnd.github+json" \
+          -H "Authorization: Bearer ${{ secrets.WEBHOOK_TOKEN }}" \
+          -d '{"event_type":"update-submodule"}' \
+          https://api.github.com/repos/hatimitu76/hatimituVault/dispatches
