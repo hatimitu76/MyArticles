@@ -10,8 +10,7 @@ jobs:
       - name: To myblog
         run: |
           sleep 5
-          curl -L \
-          -X POST \
+          curl -X POST \
           -H "Accept: application/vnd.github+json" \
           -H "Authorization: Bearer ${{ secrets.WEBHOOK_TOKEN }}" \
           -d '{"event_type":"update-myarticles-module}"' \
@@ -19,8 +18,7 @@ jobs:
       - name: To articlehub
         run: |
           sleep 5
-          curl -L \
-          -X POST \
+          curl -X POST \
           -H "Accept: application/vnd.github+json" \
           -H "Authorization: Bearer ${{ secrets.WEBHOOK_TOKEN }}" \
           -d '{"event_type":"start-build"}' \
@@ -28,8 +26,7 @@ jobs:
       - name: To articlehub
         run: |
           sleep 5
-          curl -L \
-          -X POST \
+          curl -X POST \
           -H "Accept: application/vnd.github+json" \
           -H "Authorization: Bearer ${{ secrets.WEBHOOK_TOKEN }}" \
           -d '{"event_type":"update-submodule"}' \
